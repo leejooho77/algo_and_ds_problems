@@ -30,9 +30,5 @@ public class problem_0015 {
 		}
 		return false;
 	}
-	
-	public static void main(String[] args) {
-		System.out.println(pythagoreanTriplet(Arrays.asList(3, 12, 5, 14)));
-	}
 
 }
