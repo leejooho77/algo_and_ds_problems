@@ -50,7 +50,7 @@ My playground to practice and review problems related to algorithm and data stru
 44. Validate a BST
 45. Get all Values of Certain Height in a Binary Tree
 46. Longest Substring With K Distinct Characters
-47. 	Count Number of Unival Subtrees
+47. Count Number of Unival Subtrees
 48. Construct Binary Tree From Preorder and Inorder Traversals
 49. Sort Colors
 50. Word Ordering in a Different Alphabetical Order
