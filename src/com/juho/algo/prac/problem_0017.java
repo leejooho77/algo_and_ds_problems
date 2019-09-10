@@ -20,7 +20,36 @@ package com.juho.algo.prac;
 public class problem_0017 {
 
 	public int calculate(String s) {
-		return 0;
+		s = s.trim();
+		int prev = 0, sum = 0;
+		char sign = '+';
+		for(int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if(c == ' ')
+				continue;
+			else if(Character.isDigit(c)) {
+				int value = c - '0';
+				while(i + 1 < s.length() && Character.isDigit(s.charAt(i + 1))) {
+					value = value * 10 + (s.charAt(i + 1) - '0');
+					i++;
+				}
+				if(sign == '+') {
+					sum += prev;
+					prev = 0;
+					prev += value;
+				} else if(sign == '-') {
+					sum += prev;
+					prev = 0;
+					prev -= value;
+				} else if(sign == '*') {
+					prev *= value;
+				} else {
+					prev /= value;
+				}
+			} else
+				sign = c;
+		}
+		return sum + prev;
 	}
 	
 }
