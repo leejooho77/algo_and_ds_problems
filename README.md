@@ -68,3 +68,6 @@ My playground to practice and review problems related to algorithm and data stru
 62. Valid Palindrome II
 63. Merge List Of Number Into Ranges
 64. Convert Sorted List to Binary Search Tree
+65. Convert Sorted Array to Binary Search Tree
+66. Flatten Binary Tree to Linked List
+67. Product of Array Except Self
