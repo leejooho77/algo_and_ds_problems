@@ -74,3 +74,5 @@ My playground to practice and review problems related to algorithm and data stru
 68. Intersection of Two Arrays I
 69. Intersection of Two Arrays II
 70. Rotate Linked List
+71. Longest Increasing Subsequence
+72. Number of Longest Increasing Subsequence
