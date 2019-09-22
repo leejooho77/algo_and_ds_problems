@@ -1,9 +1,5 @@
 package com.juho.algo.prac.sort;
 
-import java.util.Random;
-
-import com.juho.algo.prac.util.ArrayUtils;
-
 /**
  * 
  * @author Juho Lee
@@ -26,17 +22,6 @@ public class QuickSort {
 		}
 		ArrayUtils.swap(nums, low, pivot);
 		return low;
-	}
-
-	public static void main(String[] args) {
-		Random random = new Random();
-		int[] randomArray = new int[10];
-		for (int i = 0; i < randomArray.length; i++) {
-			randomArray[i] = random.nextInt(100);
-		}
-		ArrayUtils.print(randomArray);
-		new QuickSort().quickSort(randomArray, 0, randomArray.length - 1);
-		ArrayUtils.print(randomArray);
 	}
 
 }
