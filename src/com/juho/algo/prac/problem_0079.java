@@ -28,6 +28,7 @@ public class problem_0079 {
 		while(x > 0) {
 			int prev = result;
 			result = result * 10 + (x % 10);
+			// check overflow
 			if(result / 10 != prev) return 0;
 			x /= 10;
 		}
