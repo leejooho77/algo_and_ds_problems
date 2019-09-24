@@ -82,3 +82,5 @@ My playground to practice and review problems related to algorithm and data stru
 76. Distribute Bonuses
 77. Shortest Unsorted Continuous Subarray
 78. Non-decreasing Array
+79. Reverse Integer
+80. Design Minimum Stack
