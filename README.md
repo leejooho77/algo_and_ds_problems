@@ -84,3 +84,5 @@ My playground to practice and review problems related to algorithm and data stru
 78. Non-decreasing Array
 79. Reverse Integer
 80. Design Minimum Stack
+81. Full Binary Tree
+82. Encode and Decode String
