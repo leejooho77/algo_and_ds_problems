@@ -87,3 +87,6 @@ My playground to practice and review problems related to algorithm and data stru
 81. Full Binary Tree
 82. Decode String
 83. Circle of Chained Words
+84. Jump Game I
+85. Jump Game II
+
