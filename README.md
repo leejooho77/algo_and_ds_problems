@@ -89,4 +89,6 @@ My playground to practice and review problems related to algorithm and data stru
 83. Circle of Chained Words
 84. Jump Game I
 85. Jump Game II
+86. H Index I
+87. H Index II
 
