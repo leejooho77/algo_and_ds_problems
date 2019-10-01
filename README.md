@@ -92,3 +92,7 @@ My playground to practice and review problems related to algorithm and data stru
 86. H Index I
 87. H Index II
 88. Symmetric K-ary Tree
+89. Max and Min with Limited Comparison
+90. Binary Tree Preorder Traversal
+91. Binary Tree Inorder Traversal
+92. Binary Tree Postorder Traversal
