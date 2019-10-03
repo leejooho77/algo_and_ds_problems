@@ -97,3 +97,5 @@ My playground to practice and review problems related to algorithm and data stru
 91. Binary Tree Inorder Traversal
 92. Binary Tree Postorder Traversal
 93. Fibonacci
+94. Find the Single Element in an Array of Duplicates
+95. Single Element in a Sorted Array
