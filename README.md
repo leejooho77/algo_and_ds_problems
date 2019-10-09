@@ -102,3 +102,6 @@ My playground to practice and review problems related to algorithm and data stru
 96. Roman to Integer
 97. Integer to Roman
 98. String Compression
+99. Rearrange String
+100. Largest Number
+101. Smallest Number that is not a Sum of a Subset of List

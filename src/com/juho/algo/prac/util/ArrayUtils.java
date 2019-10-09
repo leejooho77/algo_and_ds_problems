@@ -20,4 +20,12 @@ public class ArrayUtils {
 		System.out.println("]");
 	}
 	
+	public static void print(String[] strs) {
+		System.out.print("[ ");
+		for(String s : strs) {
+			System.out.print(s + " ");
+		}
+		System.out.println("]");
+	}
+	
 }
