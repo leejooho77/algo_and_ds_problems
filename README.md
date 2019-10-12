@@ -105,3 +105,8 @@ My playground to practice and review problems related to algorithm and data stru
 99. Rearrange String
 100. Largest Number
 101. Smallest Number that is not a Sum of a Subset of List
+102. Maximum Path of Binary Tree
+103. Permutation I
+104. Permutation II
+105. Permutation Sequence
+106. Longest Consecutive Sequence
