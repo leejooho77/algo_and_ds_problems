@@ -1,5 +1,7 @@
 package com.juho.algo.prac;
 
+import java.util.LinkedList;
+
 /**
  * The set [1,2,3,...,n] contains a total of n! unique permutations.
  * By listing and labeling all of the permutations in order, we get the following sequence for n = 3:
@@ -27,9 +29,34 @@ package com.juho.algo.prac;
  * @since Oct 11, 2019
  */
 public class problem_0105 {
-
+	
+	/**
+	 * https://leetcode.com/problems/permutation-sequence/discuss/22507/%22Explain-like-I'm-five%22-Java-Solution-in-O(n)
+	 * 
+	 * @param n
+	 * @param k
+	 * @return String
+	 */
 	public String getPermutation(int n, int k) {
-        return null;
+		int[] factorial = getFactorial(n);
+		StringBuilder sb = new StringBuilder();
+		LinkedList<Integer> list = new LinkedList<>();
+		for(int i = 0; i < n; i++) list.add(i + 1);
+		k = k - 1;
+		for(int i = 1; i <= n; i++) {
+			int idx = k/factorial[n - i];
+			sb.append(list.get(idx));
+			list.remove(idx);
+			k = k - idx * factorial[n - i];
+		}
+        return sb.toString();
     }
+	
+	private int[] getFactorial(int n) {
+		int[] factorial = new int[n + 1];
+		factorial[0] = 1;
+		for(int i = 1; i < factorial.length; i++) factorial[i] = i * factorial[i - 1];
+		return factorial;
+	}
 
 }

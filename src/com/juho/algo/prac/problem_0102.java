@@ -20,9 +20,28 @@ import com.juho.algo.prac.ds.TreeNode;
  * @since Oct 9, 2019
  */
 public class problem_0102 {
-
-	public int maxPathSum(TreeNode root) {
-        return 0;
+	
+	// global variable to track the max
+	int max = Integer.MIN_VALUE;
+    
+    public int maxPathSum(TreeNode root) {
+        getMax(root);
+        return max;
     }
+	
+	private int getMax(TreeNode root) {
+        if(root == null) 
+            return 0;
+        // if left is less than 0, get 0
+        // else get max path of left
+        int left = Math.max(getMax(root.left), 0);
+        // if right is less than 0, get 0
+        // else get max path of right
+        int right = Math.max(getMax(root.right), 0);
+        // update the max
+        max = Math.max(max, left + right + root.val);
+        // return current max path
+		return Math.max(left, right) + root.val;
+	}
 
 }
