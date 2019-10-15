@@ -47,8 +47,4 @@ public class problem_0113 {
 		return result;
 	}
 	
-	public static void main(String[] args) {
-		System.out.println(new problem_0113().groupStrings(Arrays.asList("a","abc","acef","az","ba","yz","za","bcd","xyz","z")));
-	}
-	
 }
