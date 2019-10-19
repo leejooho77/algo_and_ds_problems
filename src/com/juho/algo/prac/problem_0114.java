@@ -2,6 +2,16 @@ package com.juho.algo.prac;
 
 import com.juho.algo.prac.ds.TreeNode;
 
+/**
+ * Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+ * 
+ * According to the definition of LCA on Wikipedia: 
+ * “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants 
+ * (where we allow a node to be a descendant of itself).”
+ * 
+ * @author Juho Lee
+ * @since Oct 16, 2019
+ */
 public class problem_0114 {
 
 	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {
