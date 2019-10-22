@@ -127,3 +127,6 @@ My playground to practice and review problems related to algorithm and data stru
 121. ZigZag Conversion
 122. Top K Frequent Words
 123. Top K Frequent Elements
+124. K Closest Points From Origin
+125. Palindrome Number
+126. Design Tic-Tac-Toe
