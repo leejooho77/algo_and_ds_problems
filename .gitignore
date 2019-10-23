@@ -1,5 +1,6 @@
 # gitignore file
 bin/
+.idea
 .settings
 .classpath
 .project
