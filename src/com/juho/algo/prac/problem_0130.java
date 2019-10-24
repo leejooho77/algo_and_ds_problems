@@ -24,20 +24,51 @@ import java.util.Queue;
  */
 public class problem_0130 {
 
-    public boolean isBipartite(int[][] graph) {
+    public boolean isBipartiteDFS(int[][] graph) {
+        // 0: non-visited, 1: white, -1: black
+        int[] colors = new int[graph.length];
+        for(int i = 0; i < colors.length; i++) {
+            if(colors[i] == 0 && !checkDFS(graph, colors, 1, i))
+                return false;
+        }
+        return true;
+    }
+
+    public boolean checkDFS(int[][] graph, int[] colors, int color, int vertex) {
+        // if this node is visited, return if this node has different color with previous node
+        if(colors[vertex] != 0)
+            return colors[vertex] == color;
+        // else store color in current node
+        colors[vertex] = color;
+        for(int i = 0; i < graph[vertex].length; i++) {
+            // if neighbor is not visited, recursively check if it is valid
+            if(colors[graph[vertex][i]] == 0) {
+                if(!checkDFS(graph, colors, -color, graph[vertex][i]))
+                    return false;
+            }
+            // else check if neighbor has different color
+            else {
+                if(colors[graph[vertex][i]] == colors[vertex])
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean isBipartiteBFS(int[][] graph) {
         if(graph.length == 0) return true;
         // store int value to indicate if the vertex is visited or not
         int[] visited = new int[graph.length];
         for(int i = 0; i < visited.length; i++) {
             // if we visit the node first time, go check
             // if it is not bipartitie, return false
-            if(visited[i] == 0 && !check(graph, visited, i))
+            if(visited[i] == 0 && !checkBFS(graph, visited, i))
                 return false;
         }
         return true;
     }
 
-    private boolean check(int[][] graph, int[] visited, int i) {
+    private boolean checkBFS(int[][] graph, int[] visited, int i) {
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(i);
         // mark initial vertex to 1
