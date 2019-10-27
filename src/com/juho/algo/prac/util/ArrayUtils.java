@@ -27,5 +27,12 @@ public class ArrayUtils {
 		}
 		System.out.println("]");
 	}
-	
+
+    public static void print(double[] doubles) {
+		System.out.print("[ ");
+		for(double d : doubles) {
+			System.out.print(d + " ");
+		}
+		System.out.println("]");
+    }
 }
