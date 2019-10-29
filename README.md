@@ -142,3 +142,4 @@ My playground to practice and review problems related to algorithm and data stru
 136. Walking Robot Simulation
 137. Array Partition
 138. Restore IP Addresses
+139. Perfect Number
