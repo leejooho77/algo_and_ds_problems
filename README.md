@@ -146,3 +146,4 @@ My playground to practice and review problems related to algorithm and data stru
 140. Valid Mountain Array
 141. Word Pattern
 142. Magic Squares in Grid
+143. Remove Linked List Elements
