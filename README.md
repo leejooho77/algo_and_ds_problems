@@ -145,3 +145,4 @@ My playground to practice and review problems related to algorithm and data stru
 139. Perfect Number
 140. Valid Mountain Array
 141. Word Pattern
+142. Magic Squares in Grid
