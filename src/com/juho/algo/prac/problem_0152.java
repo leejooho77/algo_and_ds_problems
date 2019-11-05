@@ -14,7 +14,7 @@ package com.juho.algo.prac;
  * Note: Your solution should be in logarithmic time complexity.
  *
  * @author Juho Lee
- * @since Nov 4, 2019
+ * @since Nov 5, 2019
  */
 public class problem_0152 {
 
