@@ -18,8 +18,22 @@ package com.juho.algo.prac;
  */
 public class problem_0152 {
 
+    /**
+     * Approach: count the number of 5.
+     * Example:
+     * Input: 25 => 1 x 2 x ... x (5) x ... (2 x 5) x ..... x (3 x 5) x .... x (4 x 5) x .... (5 x 5), Output: 6
+     *
+     * @param n
+     * @return int
+     */
     public int trailingZeroes(int n) {
-        return 0;
+        int zeroes = n/5;
+        n /= 5;
+        while(n > 0) {
+            zeroes += n/5;
+            n /= 5;
+        }
+        return zeroes;
     }
 
 }
