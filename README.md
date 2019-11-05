@@ -152,3 +152,7 @@ My playground to practice and review problems related to algorithm and data stru
 146. Contains Duplicate III
 147. Number of Segments in a String
 148. Valid Boomerang
+149. Most Frequent SubTree Sum
+150. Task Scheduler
+151. MultiTasking
+152. Factorial Trailing Zeroes
