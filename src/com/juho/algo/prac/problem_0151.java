@@ -1,5 +1,8 @@
 package com.juho.algo.prac;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * We have a list of tasks to perform, with a cooldown period.
  * We can do multiple of these at the same time, but we cannot run the same task simultaneously.
@@ -16,7 +19,22 @@ package com.juho.algo.prac;
 public class problem_0151 {
 
     public int findTime(int[] tasks, int cooldown) {
-        return 0;
+        int interval = cooldown + 1, time = 0, i = 0;
+        Set<Integer> set = new HashSet<>();
+        while (i < tasks.length) {
+            int task = tasks[i];
+            if (interval == 0 || set.contains(task)) {
+                time += interval;
+                interval = cooldown + 1;
+                set.clear();
+            } else {
+                set.add(task);
+                time++;
+                interval--;
+                i++;
+            }
+        }
+        return time;
     }
 
 }
