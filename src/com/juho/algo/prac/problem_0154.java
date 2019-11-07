@@ -13,42 +13,43 @@ import java.util.List;
 public class problem_0154 {
 
     public List<Integer> inorderTraversal(TreeNodeWithParentPointer root) {
-        // flag for traversing left
-        boolean traverseToLeft = false;
+        // flag for leftmost node
+        boolean traverseToLeft = true;
+        // list for inorder traversal
         List<Integer> result = new ArrayList<>();
         while(root != null) {
-            if (!traverseToLeft) {
-                // go all the way to left
-                while (root.left != null) {
-                    root = (TreeNodeWithParentPointer) root.left;
-                }
+            // if we have to traverse to left,
+            // go to leftmost node
+            if(traverseToLeft) {
+                while(root.left != null)
+                    root = root.left;
             }
-            // add current node to list
+            // add leftmost node
+            // and set flag to false
+            // since we are at the leftmost node
             result.add(root.val);
-            // set true since we went all the way to left
-            traverseToLeft = true;
-            // if right node of current node is not null
-            // go to right and set traverseToLeft as false
-            // so we could traverse to left again
-            if (root.right != null) {
-                root = (TreeNodeWithParentPointer) root.right;
-                traverseToLeft = false;
-            // else if parent is not null
-            // check if right node of parent is equal to current node
-            // if it is, go all the way to ancestor
-            // until right node of parent is not equal to current node
-            // or parent become null
-            } else if (root.parent != null) {
-                while (root.parent != null && root == root.parent.right)
+            traverseToLeft = false;
+            // if current node has right child
+            // go to right child and set flag to true
+            // so we can traverse to leftmost child of it
+            if(root.right != null) {
+                root = root.right;
+                traverseToLeft = true;
+            }
+            // else if the parent node is not null
+            // we go to its parent
+            else if(root.parent != null) {
+                // if right child of its parent is root itself
+                // we need to go all the way up until right child of parent is not root
+                while(root.parent != null && root.parent.right == root)
                     root = root.parent;
-                // if parent is null, we reached to root.
-                // end the loop
-                if (root.parent == null)
+                // if parent is null, we reached to root
+                // exit the loop
+                if(root.parent == null)
                     break;
-                // go one way up to avoid duplicate traversal
+                // else go to its parent
                 root = root.parent;
-            } else
-                break;
+            }
         }
         return result;
     }
@@ -56,23 +57,23 @@ public class problem_0154 {
     public static void main(String[] args) {
         TreeNodeWithParentPointer root = new TreeNodeWithParentPointer(5);
         root.left = new TreeNodeWithParentPointer(3);
-        ((TreeNodeWithParentPointer) root.left).parent = root;
+        (root.left).parent = root;
         root.left.right = new TreeNodeWithParentPointer(4);
-        ((TreeNodeWithParentPointer) root.left.right).parent = (TreeNodeWithParentPointer) root.left;
+        (root.left.right).parent = root.left;
         root.left.left = new TreeNodeWithParentPointer(2);
-        ((TreeNodeWithParentPointer) root.left.left).parent = (TreeNodeWithParentPointer) root.left;
+        (root.left.left).parent = root.left;
         root.left.left.left = new TreeNodeWithParentPointer(1);
-        ((TreeNodeWithParentPointer) root.left.left.left).parent = (TreeNodeWithParentPointer) root.left.left;
+        (root.left.left.left).parent = root.left.left;
         root.right = new TreeNodeWithParentPointer(8);
-        ((TreeNodeWithParentPointer) root.right).parent = root;
+        (root.right).parent = root;
         root.right.left = new TreeNodeWithParentPointer(6);
-        ((TreeNodeWithParentPointer) root.right.left).parent = (TreeNodeWithParentPointer) root.right;
+        (root.right.left).parent = root.right;
         root.right.right = new TreeNodeWithParentPointer(10);
-        ((TreeNodeWithParentPointer) root.right.right).parent = (TreeNodeWithParentPointer) root.right;
+        (root.right.right).parent = root.right;
         root.right.right.left = new TreeNodeWithParentPointer(9);
-        ((TreeNodeWithParentPointer) root.right.right.left).parent = (TreeNodeWithParentPointer) root.right.right;
+        (root.right.right.left).parent = root.right.right;
         root.right.right.right = new TreeNodeWithParentPointer(12);
-        ((TreeNodeWithParentPointer) root.right.right.right).parent = (TreeNodeWithParentPointer) root.right.right;
+        (root.right.right.right).parent = root.right.right;
         System.out.println(new problem_0154().inorderTraversal(root));
     }
 
