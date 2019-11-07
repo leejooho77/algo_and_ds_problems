@@ -35,7 +35,29 @@ public class problem_0153 {
      * @return double
      */
     public double knightProbability(int N, int K, int r, int c) {
-        return 0.0;
+        int[][] possibleMoves = new int[][] {{2,1},{1,2},{-1,2},{-2,1},{1,-2},{2,-1},{-1,-2},{-2,-1}};
+        double[][][] probability = new double[K + 1][N][N];
+        probability[0][r][c] = 1;
+        for(int k = 1; k <= K; k++) {
+            for(int i = 0; i < N; i++) {
+                for(int j = 0; j < N; j++) {
+                    for(int[] possibleMove : possibleMoves) {
+                        int R = i + possibleMove[0];
+                        int C = j + possibleMove[1];
+                        if(R >= 0 && R < N && C >= 0 && C < N) {
+                            probability[k][i][j] += probability[k - 1][R][C]/8.0;
+                        }
+                    }
+                }
+            }
+        }
+        double result = 0;
+        for(int i = 0; i < N; i++) {
+            for(int j = 0; j < N; j++) {
+                result += probability[K][i][j];
+            }
+        }
+        return result;
     }
 
 }
