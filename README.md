@@ -158,3 +158,4 @@ My playground to practice and review problems related to algorithm and data stru
 152. Factorial Trailing Zeroes
 153. Knight Probability in Chessboard
 154. Inorder Traversal Without Recursion
+155. Moving Stones Until Consecutive
