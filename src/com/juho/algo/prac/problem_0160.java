@@ -61,8 +61,7 @@ public class problem_0160 {
         if((MASKS[0] & mostSignificantByte) == MASKS[1]) return 4;
         if((MASKS[1] & mostSignificantByte) == MASKS[2]) return 3;
         if((MASKS[2] & mostSignificantByte) == MASKS[3]) return 2;
-        if((MASKS[3] & mostSignificantByte) != MASKS[4]
-                && (MASKS[4] & mostSignificantByte) == 0) return 1;
+        if((MASKS[3] & mostSignificantByte) < MASKS[4]) return 1;
         else return -1;
     }
 
