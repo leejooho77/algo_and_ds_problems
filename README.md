@@ -158,3 +158,10 @@ My playground to practice and review problems related to algorithm and data stru
 152. Factorial Trailing Zeroes
 153. Knight Probability in Chessboard
 154. Inorder Traversal Without Recursion
+155. Moving Stones Until Consecutive
+156. Kaprekar's Constant
+157. Generate Skyline
+158. Number of Cousins
+159. Unique Binary Search Trees II
+160. UTF-8 Validator
+161. Fixed Point
