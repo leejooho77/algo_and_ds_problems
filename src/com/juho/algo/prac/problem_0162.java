@@ -45,8 +45,8 @@ public class problem_0162 {
             result.get(level).add(0, root.val);
         else
             result.get(level).add(root.val);
-        zigzagLevelOrder(result, root.left, level + 1);
-        zigzagLevelOrder(result, root.right, level + 1);
+        zigzagLevelOrderWithDFS(result, root.left, level + 1);
+        zigzagLevelOrderWithDFS(result, root.right, level + 1);
     }
 
     public List<List<Integer>> zigzagLevelOrderWithBFS(TreeNode root) {
