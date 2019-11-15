@@ -170,3 +170,4 @@ My playground to practice and review problems related to algorithm and data stru
 164. Arranging Coins
 165. Sort a Partially Sorted List
 166. Integer Break
+167. Balanced Binary Tree
