@@ -172,3 +172,4 @@ My playground to practice and review problems related to algorithm and data stru
 166. Integer Break
 167. Balanced Binary Tree
 168. Path Sum
+169. Powerful Integers
