@@ -176,3 +176,6 @@ My playground to practice and review problems related to algorithm and data stru
 170. Rectangle Intersection
 171. Rectangle Overlap
 172. Rectangle Area
+173. Range Sum Query - Immutable
+174. Find Mode in Binary Search Tree
+175. Maximum Average Subarray I
