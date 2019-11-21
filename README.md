@@ -179,3 +179,6 @@ My playground to practice and review problems related to algorithm and data stru
 173. Range Sum Query - Immutable
 174. Find Mode in Binary Search Tree
 175. Maximum Average Subarray I
+176. Bulls And Cows
+177. Flatten Dictionary
+178. Guess Number Higher or Lower
