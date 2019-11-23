@@ -185,3 +185,6 @@ My playground to practice and review problems related to algorithm and data stru
 179. Guess Number Higher or Lower II
 180. Evaluate Reverse Polish Notation
 181. Shortest Unique Prefix
+182. Reverse Bits
+183. Power Of Four
+184. Largest Number At Least Twice of Others
