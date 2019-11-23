@@ -181,4 +181,7 @@ My playground to practice and review problems related to algorithm and data stru
 175. Maximum Average Subarray I
 176. Bulls And Cows
 177. Flatten Dictionary
-178. Guess Number Higher or Lower
+178. Guess Number Higher or Lower I
+179. Guess Number Higher or Lower II
+180. Evaluate Reverse Polish Notation
+181. Shortest Unique Prefix
