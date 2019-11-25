@@ -188,3 +188,8 @@ My playground to practice and review problems related to algorithm and data stru
 182. Reverse Bits
 183. Power Of Four
 184. Largest Number At Least Twice of Others
+185. First Recurring Character
+186. Set Mismatch
+187. Ugly Number
+188. Unique Paths
+189. Unique Paths II
