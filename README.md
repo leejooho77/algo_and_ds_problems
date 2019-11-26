@@ -193,3 +193,4 @@ My playground to practice and review problems related to algorithm and data stru
 187. Ugly Number
 188. Unique Paths
 189. Unique Paths II
+190. Search Insert Position
