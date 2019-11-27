@@ -194,3 +194,8 @@ My playground to practice and review problems related to algorithm and data stru
 188. Unique Paths
 189. Unique Paths II
 190. Search Insert Position
+191. Add Binary
+192. Divide Two Integers
+193. Palindrome Partitioning
+194. Check for Palindrome
+195. Nearest Points
