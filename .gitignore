@@ -3,5 +3,6 @@
 .settings
 .classpath
 .project
+*.iml
 bin/
 out
