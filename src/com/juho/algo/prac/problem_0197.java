@@ -23,22 +23,23 @@ public class problem_0197 {
 
     public List<List<Integer>> findLeaves(TreeNode root) {
         List<List<Integer>> result = new ArrayList();
-        findLeaves(result, root);
+        findLeaves(result, root, 0);
         return result;
     }
 
-    private void findLeaves(List<List<Integer>> result, TreeNode root) {
-
-    }
-
-    public static void main(String[] args) {
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
-        root.left.left = new TreeNode(4);
-        root.left.right = new TreeNode(5);
-        root.right.left = new TreeNode(6);
-        System.out.println(new problem_0197().findLeaves(root));
+    private int findLeaves(List<List<Integer>> result, TreeNode root, int i) {
+        if(root == null)
+            return 0;
+        if(root.left == null && root.right == null && result.size() == i) {
+            result.add(new ArrayList<>());
+            result.get(i).add(root.val);
+            return i;
+        }
+        int index = Math.max(findLeaves(result, root.left, i), findLeaves(result, root.right, i));
+        if(result.size() == index)
+            result.add(new ArrayList<>());
+        result.get(index).add(root.val);
+        return index + 1;
     }
 
 }
