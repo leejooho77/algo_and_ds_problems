@@ -199,3 +199,7 @@ My playground to practice and review problems related to algorithm and data stru
 193. Palindrome Partitioning
 194. Check for Palindrome
 195. Nearest Points
+196. Filter Binary Tree Leaves
+197. Find Leaves of Binary Tree
+198. Swap Nodes in Pairs
+199. Partition List
