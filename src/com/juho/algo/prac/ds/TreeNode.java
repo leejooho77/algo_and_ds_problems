@@ -34,15 +34,15 @@ public class TreeNode {
 		if(root == null)
 			return;
 		sb.append(root.val).append(" ");
-		inorderTraversal(sb, root.left);
-		inorderTraversal(sb, root.right);
+		preorderTraversal(sb, root.left);
+		preorderTraversal(sb, root.right);
 	}
 
 	private void postorderTraversal(StringBuilder sb, TreeNode root) {
 		if(root == null)
 			return;
-		inorderTraversal(sb, root.left);
-		inorderTraversal(sb, root.right);
+		postorderTraversal(sb, root.left);
+		postorderTraversal(sb, root.right);
 		sb.append(root.val).append(" ");
 	}
 }

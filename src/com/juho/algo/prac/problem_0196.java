@@ -29,20 +29,4 @@ public class problem_0196 {
         return leftFilter && rightFilter;
     }
 
-    public static void main(String[] args) {
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(1);
-        root.right = new TreeNode(1);
-        root.left.left = new TreeNode(2);
-        root.right.left = new TreeNode(1);
-        System.out.println(root.toString());
-        System.out.println(new problem_0196().filter(root, 1).toString());
-
-        TreeNode root1 = new TreeNode(1);
-        root1.left = new TreeNode(2);
-        root1.left.left = new TreeNode(4);
-        root1.left.right = new TreeNode(5);
-        System.out.println(root1.toString());
-    }
-
 }
