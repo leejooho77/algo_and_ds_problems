@@ -216,3 +216,6 @@ My playground to practice and review problems related to algorithm and data stru
 210. Valid Number
 211. Subtree of Another Tree
 212. Smallest Subtree with all the Deepest Nodes
+213. Find All Anagrams in a String
+214. Swap Bits
+215. String to Integer
