@@ -223,3 +223,5 @@ My playground to practice and review problems related to algorithm and data stru
 217. Pow(x, n)
 218. Sqrt(x)
 219. Missing Ranges
+220. Maximize Distance to Closest Person
+221. Power of Three
