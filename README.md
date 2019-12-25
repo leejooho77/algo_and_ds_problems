@@ -230,3 +230,5 @@ My playground to practice and review problems related to algorithm and data stru
 224. Sum of Square Numbers
 225. Remove Duplicates from Sorted List
 226. Remove Duplicates from Sorted List II
+227. N Queens
+228. N Queens II
