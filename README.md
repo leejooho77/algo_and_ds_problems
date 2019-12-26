@@ -232,3 +232,5 @@ My playground to practice and review problems related to algorithm and data stru
 226. Remove Duplicates from Sorted List II
 227. N Queens
 228. N Queens II
+229. Remove Outermost Parenthesis
+230. Number of Connected Components in an Undirected Graph
