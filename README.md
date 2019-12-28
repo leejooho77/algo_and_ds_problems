@@ -234,3 +234,5 @@ My playground to practice and review problems related to algorithm and data stru
 228. N Queens II
 229. Remove Outermost Parenthesis
 230. Number of Connected Components in an Undirected Graph
+231. Base 2/-2
+232. Base 7
