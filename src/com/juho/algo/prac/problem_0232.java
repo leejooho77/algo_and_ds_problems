@@ -23,13 +23,18 @@ package com.juho.algo.prac;
  */
 public class problem_0232 {
 
-    public String convertToBaseNeg2(int n) {
+    public String convertToBaseNeg2_iter(int N) {
         StringBuilder sb = new StringBuilder();
-        while(n > 0) {
-            sb.insert(0, n % 2);
-            n /= 2;
+        while(N != 0) {
+            sb.insert(0, N & 1);
+            N = -(N >> 1);
         }
-        return sb.toString();
+        return sb.length() > 0 ? sb.toString() : "0";
+    }
+
+    public String convertToBaseNeg2_recur(int N) {
+        if(N == 0 || N == 1) return String.valueOf(N);
+        return convertToBaseNeg2_recur(-(N >> 1)) + String.valueOf(N & 1);
     }
 
 }
