@@ -1,8 +1,6 @@
 package com.juho.algo.prac;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...], 
@@ -18,39 +16,28 @@ public class problem_0059 {
 
 	/**
 	 * Sort the interval based on start time.
-	 * Have an empty list for store the room.
-	 * While iterating the list, if we don't find any overlapping room,
-	 * switch current interval with new interval.
-	 * Else just add new interval at the end.
+	 * Have a heap to store the room.
+	 * While iterating the list, if we find overlapping room, push new room
+	 * Else pop the existing one and push new room.
 	 * 
 	 * @param intervals
 	 * @return int
 	 */
-	public int meetingRoomsI(int[][] intervals) {
+	public int minMeetingRooms(int[][] intervals) {
 		Arrays.sort(intervals, (a, b) -> {
-			int compare = Integer.compare(a[0], b[0]);
-			if(compare != 0)
-				return compare;
-			else 
+			Integer comp = Integer.compare(a[0], b[0]);
+			if(comp == 0)
 				return Integer.compare(a[1], b[1]);
+			else
+				return comp;
 		});
-		List<int[]> rooms = new ArrayList<>();
+		PriorityQueue<Integer> rooms = new PriorityQueue<>();
 		for(int[] interval : intervals) {
-			checkRooms(rooms, interval);
+			if(!rooms.isEmpty() && rooms.peek() <= interval[0])
+				rooms.poll();
+			rooms.add(interval[1]);
 		}
 		return rooms.size();
-	}
-	
-	private void checkRooms(List<int[]> rooms, int[] interval) {
-		for(int i = 0; i < rooms.size(); i++) {
-			int[] room = rooms.get(i);
-			if(room[1] < interval[0]) {
-				rooms.remove(room);
-				rooms.add(interval);
-				return;
-			}
-		}
-		rooms.add(interval);
 	}
 	
 }
