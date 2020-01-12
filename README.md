@@ -240,3 +240,7 @@ My playground to practice and review problems related to algorithm and data stru
 234. Find Duplicate Subtrees
 235. Find K Closest Elements
 236. Next Greater Element II
+237. Fraction to Recurring Decimal
+238. Primes
+239. Convert a Number to Hexadecimal
+240. Multiply Strings
