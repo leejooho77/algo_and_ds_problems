@@ -247,3 +247,4 @@ My playground to practice and review problems related to algorithm and data stru
 241. Remove All Adjacent Duplicates In String
 242. Find Common Characters
 243. Transpose Matrix
+244. Minimum Number of Operations
