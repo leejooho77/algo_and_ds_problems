@@ -248,3 +248,5 @@ My playground to practice and review problems related to algorithm and data stru
 242. Find Common Characters
 243. Transpose Matrix
 244. Minimum Number of Operations
+245. Shortest Distance to a Character
+246. Pascal's Triangle
