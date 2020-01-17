@@ -252,3 +252,4 @@ My playground to practice and review problems related to algorithm and data stru
 246. Pascal's Triangle
 247. Pascal's Triangle II
 248. Three Sum Closest
+249. Add Binary
